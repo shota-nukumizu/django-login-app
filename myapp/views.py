@@ -26,15 +26,15 @@ def index_func(request):
 @login_required
 def app1_func(request, pk):
     user = SampleUser.objects.get(pk=pk)
-    if user.role == 'leader':
-        return render(request, 'index.html', {})
+    if user.role != 'super-advisor':
+        return render(request, 'app1.html', {})
     
     return render(request, 'index.html', {})
 
 @login_required
 def app2_func(request, pk):
     user = SampleUser.objects.get(pk=pk)
-    if not user.role == 'normal':
+    if user.role != 'normal':
         return render(request, 'app2.html', {})
     
     return render(request, 'index.html', {})
@@ -42,7 +42,7 @@ def app2_func(request, pk):
 @login_required()
 def app3_func(request, pk):
     user = SampleUser.objects.get(pk=pk)
-    if not user.role == 'normal':
+    if user.role != 'normal':
         return render(request, 'app3.html', {})
 
     return render(request, 'index.html', {})
