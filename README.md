@@ -40,6 +40,7 @@ def login_func(request):
 def index_func(request):
     return render(request, 'index.html', {})
 
+# ここでuserモデルのプロパティroleの値に従って分類する
 @login_required
 def app1_func(request, pk):
     user = SampleUser.objects.get(pk=pk)
