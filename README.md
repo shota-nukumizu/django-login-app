@@ -297,10 +297,61 @@ MySQLとの連携が終了した後、以下のコマンドで`dump.json`のデ�
 python manage.py loaddata dump.json
 ```
 
+`dump.json`
+
 ```json
 [{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2022-06-13T03:42:56.984Z", "user": 1, "content_type": 6, "object_id": "2", "object_repr": "nameless", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2022-06-13T03:43:21.331Z", "user": 1, "content_type": 6, "object_id": "3", "object_repr": "shota", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2022-06-13T03:43:29.378Z", "user": 1, "content_type": 6, "object_id": "1", "object_repr": "author", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Role\"]}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2022-06-13T03:43:38.353Z", "user": 1, "content_type": 6, "object_id": "2", "object_repr": "nameless", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Role\"]}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2022-06-13T03:43:44.231Z", "user": 1, "content_type": 6, "object_id": "1", "object_repr": "author", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Role\"]}}]"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add content type", "content_type": 4, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change content type", "content_type": 4, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete content type", "content_type": 4, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view content type", "content_type": 4, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add session", "content_type": 5, "codename": "add_session"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change session", "content_type": 5, "codename": "change_session"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete session", "content_type": 5, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view session", "content_type": 5, "codename": "view_session"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add user", "content_type": 6, "codename": "add_sampleuser"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change user", "content_type": 6, "codename": "change_sampleuser"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete user", "content_type": 6, "codename": "delete_sampleuser"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view user", "content_type": 6, "codename": "view_sampleuser"}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "myapp", "model": "sampleuser"}}, {"model": "sessions.session", "pk": "9xc093gjepo9we7w2q204zfaeahix9oi", "fields": {"session_data": ".eJxVjDsOwjAQRO_iGlle_BUlPWew1us1DiBHipMKcXccKQV0o3lv5i0ibmuNW-clTllcBIjTb5eQntx2kB_Y7rOkua3LlOSuyIN2eZszv66H-3dQsdexNqxDUeg8ZgjaJVcUsPUcrBttHggIRzbBmEIqeTqjI6UBrA9UtPh8Adw4N5A:1o0ayB:uX7mKRhw2PezZ7uqg0sacJ2S_cUmWGoJwZ_ryZ_WNiA", "expire_date": "2022-06-27T03:42:27.963Z"}}, {"model": "myapp.sampleuser", "pk": 1, "fields": {"password": "pbkdf2_sha256$320000$MyIDir1xmGO29nISywOFME$ID9hBQNL8xIOibKs2anW2KLbJaQbBxHiFY1RU4IUtdI=", "last_login": "2022-06-13T03:42:27Z", "is_superuser": true, "username": "author", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2022-06-13T03:41:48Z", "role": 2, "groups": [], "user_permissions": []}}, {"model": "myapp.sampleuser", "pk": 2, "fields": {"password": "%Sam2000", "last_login": null, "is_superuser": false, "username": "nameless", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2022-06-13T03:42:32Z", "role": 3, "groups": [], "user_permissions": []}}, {"model": "myapp.sampleuser", "pk": 3, "fields": {"password": "&Watt100", "last_login": null, "is_superuser": false, "username": "shota", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2022-06-13T03:42:57Z", "role": 3, "groups": [], "user_permissions": []}}]
+```
+
+# MySQLのデータベースとの連携
+
+まずは以下のコマンドを叩く。(**その前にWindowsは`choco`コマンド経由で`sudo`コマンドをインストールしておく必要がある**)
 
 ```
+sudo mysql -u root -p
+```
+
+パスワード入力を求められるので、以下のように入力しておく。
+
+```
+@Python2000
+```
+
+入力し終えた後、以下のコマンドを入力してすべてのユーザにアクセス権限を譲渡する
+
+```sql
+GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
+```
+
+しかし、このままでは文字コード`utf-8`に対応していないので以下のように設定しておく
+
+`/etc/mysql/mysql.conf.d/mysqld.cnf`
+
+```
+character-set-server = utf8
+default_password_lifetime = 0
+```
+
+事前に以下のパッケージをインストールしておく
+
+```
+pip install mysqlclient
+pip install PyMySQL
+```
+
+以下のコマンドを入力してデータベースを連携しておく
+
+```
+py manage.py makemigrations
+py manage.py migrate
+```
+
+最後に以下のようにしてMySQLにデータを挿入する
+
+```
+py manage.py loaddata dump.json
+```
+
 
 # 開発環境
 
