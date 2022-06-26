@@ -352,6 +352,21 @@ py manage.py migrate
 py manage.py loaddata dump.json
 ```
 
+# データベース変更
+
+現時点では試作の段階のため、データベースをMySQLからSQLiteに変更した。
+
+```py
+import os
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+```
+
 
 # 開発環境
 
