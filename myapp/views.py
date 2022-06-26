@@ -39,7 +39,7 @@ def app2_func(request, pk):
     
     return render(request, 'index.html', {})
 
-@login_required()
+@login_required
 def app3_func(request, pk):
     user = SampleUser.objects.get(pk=pk)
     if user.role != 'normal':
